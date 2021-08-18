@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     stages {
         stage('Build') {
             steps {
@@ -17,3 +18,5 @@ pipeline {
         }
     }
 }
+
+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
