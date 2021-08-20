@@ -44,7 +44,9 @@ pipeline {
         }
         stage('Run Image') {
                     steps {
-                        dockerImage.run()
+                        script {
+                            dockerImage.run()
+                        }
                     }
         }
     }
