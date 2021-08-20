@@ -42,5 +42,10 @@ pipeline {
                 sh "docker rmi $registry:$BUILD_NUMBER"
             }
         }
+        stage('Run Image') {
+                    steps {
+                        dockerImage.run()
+                    }
+        }
     }
 }
